@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES-6(let-var)</title>
+</head>
+
+<body>
+    <h1>
+        LET AND VAR
+    </h1>
+    <h2>
+        let keyword
+    </h2>
+
+
+
+
+
+
+
+
+    <script>
+        //  document.write("var key word output")
+        // var a = 10;
+
+        //         if (true) {
+        //             var a = 20;
+        //             document.write(a);
+        //         }
+        //         document.write(a);
+
+        document.write("let key word output")
+        let a = 10;
+
+        if (true) {
+            let a = 20;
+            document.write("<hr>")
+            document.write(a);
+            document.write("<hr>")
+        }
+        document.write(a);
+        ///////////////////////////////////////////////////////
+        document.write("var output");
+        for (var i = 0; i < 10; i++) {
+            setTimeout(() => {
+                document.write(i)
+            }, 1000)
+        }
+        document.write("<hr>");
+        ////////////////////////////////////////////////////////////
+        document.write("let output");
+        for (let i = 0; i < 10; i++) {
+            setTimeout(() => {
+                document.write(i)
+            }, 1000)
+        }
+        document.write("tasks")
+        document.write("Create a function that takes two numbers as parameters and returns their sum.");
+        function calculateSum(a, b) {
+            return a + b;
+        }
+        document.write("Program to calculate the factorial of a number");
+        function calculateFactorial(num) {
+  if (num === 0 || num === 1) {
+    return 1;
+  } else {
+    return num * calculateFactorial(num - 1);
+  }
+}
+document.write("to check if a string is a palindrome:");
+function isPalindrome(str) {
+  const formattedStr = str.toLowerCase().replace(/[^a-z0-9]/g, '');
+  const reversedStr = formattedStr.split('').reverse().join('');
+  return formattedStr === reversedStr;
+}
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>
